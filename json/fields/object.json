@@ -1,0 +1,10 @@
+{
+	"type": "object",
+	"title": "New object",
+	"properties": {
+		"new_object":{
+			"type": "string",
+			"name": "Default name"
+		}
+	}
+}
