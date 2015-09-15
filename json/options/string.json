@@ -1,25 +1,26 @@
 {
   "schema": {
-    "friends": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "title": "Friend",
-        "properties": {
-          "nick": {
-            "type": "string",
-            "title": "Nickname",
-            "required": true
-          },
-          "gender": {
-            "type": "string",
-            "title": "Gender",
-            "enum": [ "male", "female", "alien" ]
-          },
-          "age": {
-            "type": "integer",
-            "title": "Age"
-          }
+    "field": {
+      "type": "object",
+      "title": "Field properties",
+      "properties": {
+        "key_name": {
+          "type": "string",
+          "title": "Key name",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "title": "Name"
+        },
+        "description": {
+          "type": "string",
+          "title": "Description"
+        },
+        "type": {
+          "type": "string",
+          "title": "Type",
+          "enum": [ "string", "textarea", "select" , "checkbox" ]
         }
       }
     }
